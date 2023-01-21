@@ -1,5 +1,0 @@
-x <- matrix(sample(1:50), nrow = 5, ncol = 10)
-colnames(x) <- c("cond1", "cond2", "cond3", "cond4", "cond5", "ctrl1", "ctrl2", "ctrl3", "ctrl4", "ctrl5")
-rownames(x) <- c("gene1", "gene2", "gene3", "gene4", "gene5")
-fold_change <- log2(rowMeans(x[, 1:5]) / rowMeans(x[, 6:10]))
-fold_change
